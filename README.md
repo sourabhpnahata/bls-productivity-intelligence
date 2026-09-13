@@ -1,6 +1,4 @@
-# bls-productivity-intelligence
 
-````markdown
 # BLS Productivity Intelligence Platform
 
 A production-style **Databricks data engineering project** built using U.S. Bureau of Labor Statistics (BLS) Productivity data and U.S. population data.
