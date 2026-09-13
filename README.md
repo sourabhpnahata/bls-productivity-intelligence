@@ -1,5 +1,4 @@
 # bls-productivity-intelligence
-Yes — for GitHub, I’d make it **one compact README**, around 1–1.5 pages.
 
 ````markdown
 # BLS Productivity Intelligence Platform
@@ -164,16 +163,6 @@ A dedicated validation notebook checks:
 * anomaly scores and severity
 * cross-layer consistency
 
-## Rearc Data Quest
-
-The project implements all three challenge requirements:
-
-1. Mean and standard deviation of U.S. population for **2013–2018**.
-2. Best year for every `series_id` based on the **sum of quarterly values**.
-3. `PRS30006032` `Q01` values joined with annual population.
-
-The challenge solution reads from the production-style Gold layer rather than creating duplicate datasets.
-
 ## Project Structure
 
 ```text
@@ -186,21 +175,11 @@ bls-productivity-intelligence/
 │   ├── silver/
 │   ├── gold/
 │   └── statistical/
+│   └── serving/
 ├── notebooks/
 │   ├── challenge/
-│   └── validation/
 ├── resources/
 └── docs/
-```
-
-## Deployment
-
-The project is structured for **Databricks Declarative Automation Bundles**.
-
-```bash
-databricks bundle validate
-databricks bundle deploy -t dev
-databricks bundle run <resource-name>
 ```
 
 ## Future Enhancements
@@ -217,7 +196,7 @@ databricks bundle run <resource-name>
 
 This project demonstrates an end-to-end data engineering workflow covering:
 
-**Dynamic ingestion → PySpark → Lakeflow → Delta Lake → Medallion Architecture → Statistical Analysis → Anomaly Detection → Data Quality → Deployment as Code**
+**Dynamic ingestion → PySpark → Lakeflow → Delta Lake → Medallion Architecture → Statistical Analysis → Anomaly Detection → Dashboard → Deployment as Code**
 
 ```
 ```
